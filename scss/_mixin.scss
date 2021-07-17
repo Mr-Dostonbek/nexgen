@@ -1,0 +1,10 @@
+@mixin section-padding {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+@mixin breakpoint($givenBreakpoint) {
+  @media only screen and (max-width: $givenBreakpoint){
+    @content;
+  }
+}
