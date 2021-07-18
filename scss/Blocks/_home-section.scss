@@ -327,15 +327,8 @@
     @include section-padding;
     .get-started__info{
       max-width: 55%;
-      margin: 24px 0;
-      .built-text{
-        margin-bottom: 24px;
-      }
       .info{
         font-size: 56px;
-        font-weight: 700;
-        color: $white-color;
-        margin: 24px 0;
       }
     }
   }
@@ -347,15 +340,11 @@
     @include section-padding;
     .get-started__info{
       max-width: 75%;
-      margin: 24px 0;
       .built-text{
         margin-bottom: 24px;
       }
       .info{
         font-size: 48px;
-        font-weight: 700;
-        color: $white-color;
-        margin: 24px 0;
       }
     }
   }
@@ -367,15 +356,11 @@
     @include section-padding;
     .get-started__info{
       max-width: 100%;
-      margin: 24px 0;
       .built-text{
         margin-bottom: 24px;
       }
       .info{
         font-size: 56px;
-        font-weight: 700;
-        color: $white-color;
-        margin: 24px 0;
       }
     }
   }
@@ -387,15 +372,8 @@
     @include section-padding;
     .get-started__info{
       max-width: 100%;
-      margin: 24px 0;
-      .built-text{
-        margin-bottom: 16px;
-      }
       .info{
         font-size: 40px;
-        font-weight: 700;
-        color: $white-color;
-        margin: 16px 0;
       }
       .buttons{
         margin-top: 30px;
@@ -403,7 +381,7 @@
           display: block;
           width: 60%;
           margin-left: 0;
-          margin-bottom: 16px;
+          margin-bottom: 20px;
         }
       }
     }
