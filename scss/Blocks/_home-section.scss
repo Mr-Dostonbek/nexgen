@@ -324,8 +324,7 @@
 
 @media (max-width: 992px) {
   .get-started{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    @include section-padding;
     .get-started__info{
       max-width: 55%;
       margin: 24px 0;
@@ -385,8 +384,7 @@
 
 @media (max-width: 410px) {
   .get-started{
-    padding-top: 70px;
-    padding-bottom: 70px;
+    @include section-padding;
     .get-started__info{
       max-width: 100%;
       margin: 24px 0;
