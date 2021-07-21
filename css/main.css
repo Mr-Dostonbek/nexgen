@@ -981,13 +981,6 @@ nav.sticky {
 }
 
 @media (max-width: 410px) {
-  .home-demos__container {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-  .home-demos__container .demos-title h2 {
-    font-size: 32px;
-  }
   .get-started {
     padding-top: 130px;
     padding-bottom: 130px;

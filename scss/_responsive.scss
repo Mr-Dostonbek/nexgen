@@ -130,15 +130,6 @@
 }
 
 @media (max-width: 410px) {
-  .home-demos__container{
-    padding-top: 90px;
-    padding-bottom: 90px;
-    .demos-title{
-      h2{
-        font-size: 32px
-      }
-    }
-  }
   .get-started{
     @include section-padding;
     .get-started__info{
