@@ -3,9 +3,6 @@
   .carousel{
     min-height: 100vh;
     .carousel-indicators{
-      position: absolute;
-      top: 25%;
-      right: 0;
       transform: rotate(90deg);
       button.active{
         background-color: $primary-color;

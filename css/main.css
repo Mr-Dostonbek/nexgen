@@ -828,9 +828,6 @@ nav.sticky {
 }
 
 .section-carousel .carousel .carousel-indicators {
-  position: absolute;
-  top: 25%;
-  right: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
