@@ -5,7 +5,7 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  padding: 70px 25px;
+  padding: 100px 25px;
   .home_content{
     padding: 48px 0;
     .logo {
@@ -80,7 +80,7 @@
   position: absolute;
   width: 150px;
   height: 60px;
-  background: url('/assets//images/Home/bullets.png') no-repeat;
+  background: url('/assets/images/Home/bullets.png') no-repeat;
   background-size: cover;
   bottom: -30px;
   opacity: 0.25;
@@ -97,6 +97,7 @@
 .home-demos__container {
   max-width: 1440px;
   padding: 0 15px;
+  overflow: hidden;
   h2{
     font-size: 48px;
     color: $white-color;
@@ -188,6 +189,7 @@
   // Built-Smallest section
 
   .built-smallest{
+    position: relative;
     background-color: $section-2-bg-color;
     .built-smallest__container{
       @include section-padding;
@@ -322,68 +324,7 @@
 
 
 
-@media (max-width: 992px) {
-  .get-started{
-    @include section-padding;
-    .get-started__info{
-      max-width: 55%;
-      .info{
-        font-size: 56px;
-      }
-    }
-  }
-}    
 
 
-@media (max-width: 767.98px) {
-  .get-started{
-    @include section-padding;
-    .get-started__info{
-      max-width: 75%;
-      .built-text{
-        margin-bottom: 24px;
-      }
-      .info{
-        font-size: 48px;
-      }
-    }
-  }
-}
 
 
-@media (max-width: 515px) {
-  .get-started{
-    @include section-padding;
-    .get-started__info{
-      max-width: 100%;
-      .built-text{
-        margin-bottom: 24px;
-      }
-      .info{
-        font-size: 56px;
-      }
-    }
-  }
-}
-
-
-@media (max-width: 410px) {
-  .get-started{
-    @include section-padding;
-    .get-started__info{
-      max-width: 100%;
-      .info{
-        font-size: 40px;
-      }
-      .buttons{
-        margin-top: 30px;
-        .btn{
-          display: block;
-          width: 60%;
-          margin-left: 0;
-          margin-bottom: 20px;
-        }
-      }
-    }
-  }
-}

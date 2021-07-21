@@ -19,3 +19,16 @@ function Loading() {
 }
 
 // Loading end
+
+// navbar start
+
+
+window.addEventListener("scroll", function(){
+  const header = document.querySelector('.wrapper');
+  const top = window.scrollY();
+  if(top > 10) {
+    header.classList.toggle("sticky");
+  } else{
+    header.classList.remove("sticky");
+  }
+})
