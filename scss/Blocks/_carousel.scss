@@ -1,8 +1,14 @@
 .section-carousel{
-  height: 500px !important;
+  min-height: calc(100vh - 50px);
+    cursor: w-resize;
   .carousel{
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     .carousel-indicators{
+      position: absolute;
+      top: calc(50% - 50px);
+      right: -25px;
+      left: initial;
       transform: rotate(90deg);
       button.active{
         background-color: $primary-color;

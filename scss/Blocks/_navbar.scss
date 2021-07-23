@@ -1,39 +1,110 @@
+.navbar-fluid{
+  background-color: $nav-top-bg-color;
+}
+.navbar-info{
+  line-height: 50px;
+  font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+  .date-left{
+    padding-right: 16px;
+  }
+  a{
+    color: $secondary-p-color;
+    font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 14.5px;
+    transition: all .4s ease-out 0s;
+    &:hover{
+      color: $secondary-color;
+      transition: all .4s ease-out 0s;
+    }
+  }
+  .contact-right > a{
+    padding: 0px 16px;
+    transition: all .4s ease-out 0s;
+    &:hover{
+      color: $secondary-color;
+      transition: all .4s ease-out 0s;
+    }
+  }
+  .message span{
+    padding: 0 16px;
+    color: $secondary-p-color;
+    cursor: pointer;
+    transition: all .4s ease-out 0s;
+    &:hover{
+      color: $secondary-color;
+      transition: all .4s ease-out 0s;
+    }
+  }
+  .message > span:last-child{
+    padding-right: 0;
+  }
+}
+
 .wrapper{
   background: transparent;
   position: fixed;
   top: 50px;
+  left: 0;
   min-width: 100%;
   z-index: 999;
+  padding: 20px 0;
+  // line-height: 56px;
 }
 .wrapper nav{
   display: flex;
   max-width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 nav .content{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 nav .content .links{
   display: flex;
 }
 .content .logo a{
   color: #fff;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 19.2px;
+  font-weight: 700;
+  font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  line-height: 1;
 }
 .content .links li{
   list-style: none;
-  line-height: 70px;
 }
-.content .links li a
-// .content .links li label
-{
-  display: block;
+.logo-befor{
+  position: relative;
+  display: inline-block;
+  padding: 13px 2px 14px 27px;
+  .part1{
+    position: relative;
+    left: 10px;
+    color: $secondary-color;
+  }
+}
+.part2{
+  color: $secondary-p-color;
+}
+.logo-befor::before{
+  content: "";
+  width: calc(100% + 7px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $secondary-color;
+  opacity: 0.15;
+  border-radius: 100px 0 0 100px;
+}
+.content .links li a{
   color: $white-color;
   font-size: 1rem;
   font-weight: 500;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   padding: 8px 16px;
   transition: all 0.3s ease;
 }
@@ -74,7 +145,7 @@ nav .content .links{
   padding: 0;
 }
 .content .links li:hover > ul{
-  top: 60px;
+  top: 50px;
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
@@ -107,13 +178,31 @@ nav .content .links{
   flex-wrap: nowrap;
 }
 
-.nav-contact label + label{
+.nav-contact{
   margin-left: 20px;
-} 
+}
+
+.nav-contact label + label, .nav-contact button{
+  margin-left: 30px;
+  cursor: pointer;
+  color: $white-color;
+  transition: all .4s ease-out 0s;
+}
+.nav-contact label:hover {
+  color: $primary-color;
+  transition: all .4s ease-out 0s;
+}
+
 
 /* Responsive code start */
 
 @media screen and (max-width: 1200px){
+  .wrapper{
+    top: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: w-resize;
+  }
   .wrapper .menu-icon{
     display: block;
   }
@@ -212,12 +301,13 @@ nav.sticky{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: yellow;
-  z-index: 1000000;
+  background-color: $header-bg-color;
+  padding: 10px 0;
+  z-index: 9000;
 }
 
 @media (min-width: 576px){
   .search-content, .user-content,  .list {
-    width: 500px;
+    width: 100%;
  }
 }

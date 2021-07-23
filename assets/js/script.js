@@ -1,5 +1,4 @@
 // Loading
-"Use strict";
 
 const loading = document.querySelector('.loading');
 const count = document.querySelector('.count');
@@ -15,7 +14,7 @@ function Loading() {
     clearInterval(int);
     loading.style.display = "none";
   }
-  count.innerHTML = `${load}`;
+  count.innerHTML = load;
 }
 
 // Loading end
@@ -25,10 +24,9 @@ function Loading() {
 
 window.addEventListener("scroll", function(){
   const header = document.querySelector('.wrapper');
-  const top = window.scrollY();
-  if(top > 10) {
-    header.classList.toggle("sticky");
+  if(window.scrollY > 10) {
+    header.classList.add("sticky");
   } else{
     header.classList.remove("sticky");
   }
-})
+});
