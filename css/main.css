@@ -1,3 +1,5 @@
+@import url(d:\Project\Nexgen\assets\splide-2.4.21\dist\css\themes\splide-sea-green.min.css);
+@import url(d:\Project\Nexgen\assets\splide-2.4.21\dist\css\themes\splide-skyblue.min.css);
 @font-face {
   font-family: 'Poppins';
   src: url("../fonts/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins-Black.woff") format("woff");
@@ -756,7 +758,7 @@ nav .content .links {
 }
 
 .content .links li:hover > ul {
-  top: 50px;
+  top: 55px;
   opacity: 1;
   visibility: visible;
   -webkit-transition: all 0.3s ease;
@@ -939,57 +941,31 @@ nav.sticky {
   }
 }
 
-.section-carousel {
+.splide {
   position: relative;
-  min-height: calc(100vh - 50px);
-  cursor: w-resize;
 }
 
-.section-carousel .carousel {
+.splide__slide {
+  position: relative;
+  height: calc(100vh - 50px);
+}
+
+.splide__slide img {
   width: 100%;
   height: 100%;
-}
-
-.section-carousel .carousel .carousel-indicators button.active {
-  background-color: #058283;
-}
-
-.section-carousel .carousel .carousel-inner {
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #19191f;
-}
-
-.section-carousel .carousel .carousel-inner .carousel-item {
-  height: calc(100vh - 100px);
-}
-
-.section-carousel .carousel .carousel-inner .carousel-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 11;
-}
-
-.section-carousel .carousel .carousel-inner .carousel-item img {
-  width: 100px;
-  height: calc(100vh - 100px);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top center;
      object-position: top center;
 }
 
-.section-carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+.splide__slide .splide__overlay {
   position: absolute;
-  top: 25%;
-  z-index: 555;
-  color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -997,45 +973,184 @@ nav.sticky {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.section-carousel .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+.splide__slide .splide__overlay .text {
+  width: 60%;
+  padding: 3rem 0;
+  z-index: 333;
+}
+
+.splide__slide .splide__overlay .text h1 {
   font-size: 72px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  margin: 24px 0;
-}
-
-.section-carousel .carousel .carousel-inner .carousel-item .carousel-caption p {
-  font-size: 19.2px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  margin: 24px 0;
-}
-
-.carousel-indicators [data-bs-target] {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  width: 35px;
-  height: 8px;
+  font-weight: 900;
+  color: #ffffff;
   padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: transparent;
-  background-clip: padding-box;
-  border: 0;
-  border-radius: 5px;
+  margin: 24px 0;
+}
+
+.splide__slide .splide__overlay .text p {
+  font-size: 19.2px;
+  font-weight: 500;
+  padding: 0;
+  margin: 24px 0;
+  color: #c0c3d0;
+}
+
+.splide__pagination {
+  position: absolute;
+  top: calc(50% - 50px);
+  width: 150px;
+  height: 30px;
+  left: 92%;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.splide__pagination .splide__pagination__page {
+  width: 30px;
+  height: 9px;
+  border-radius: 15px;
+  background: transparent;
   border: 1px solid #058283;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.6s ease;
-  transition: opacity 0.6s ease;
+  margin: 5px;
+}
+
+.splide__pagination .splide__pagination__page.is-active {
+  background: #058283;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.splide__arrows {
+  display: none;
+}
+
+.slide__three {
+  width: 45% !important;
+  margin-left: auto;
+}
+
+@media (max-width: 1199px) {
+  .splide__pagination {
+    left: 90%;
+  }
+  .text__two {
+    width: 100%;
+  }
+  .text__three {
+    width: 65%;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .splide__container {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+  .splide__pagination {
+    left: 88%;
+  }
+  .text h1 {
+    font-size: 56px !important;
+  }
+  .text__two {
+    width: 100%;
+  }
+  .text__three {
+    width: 65% !important;
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .splide__pagination {
+    left: 84%;
+  }
+  .text h1 {
+    font-size: 48px !important;
+  }
+  .text .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 24px;
+  }
+  .text .buttons .btn {
+    position: relative;
+    min-width: 180px;
+    font-size: 0.9rem;
+  }
+  .text .buttons .btn-outline {
+    margin-left: 24px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .splide__pagination {
+    left: 78%;
+  }
+}
+
+@media (max-width: 430px) {
+  .splide__container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .splide__container .splide__overlay {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .splide__pagination {
+    left: 74%;
+  }
+  .text {
+    width: 90% !important;
+    text-align: left !important;
+  }
+  .text h1 {
+    font-size: 40px !important;
+  }
+  .text p {
+    font-size: 16px !important;
+    margin-bottom: 0 !important;
+  }
+  .text .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 24px;
+  }
+  .text .buttons .btn {
+    position: relative;
+    max-width: 180px;
+    font-size: 0.9rem;
+  }
+  .text .buttons .btn-outline {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .text__two {
+    width: 90%;
+  }
+  .text__three {
+    width: 90% !important;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 992px) {
