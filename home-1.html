@@ -85,7 +85,7 @@
               </div>
 
               <ul class="links">
-                <label for="show-menu" class="menu-icon"
+                <label for="show-menu" class="cancel__arrow mb-5"
                   ><i class="fas fa-arrow-right text-dark"></i
                 ></label>
                 <li>
@@ -93,7 +93,7 @@
                     HOME <span class="fa fa-chevron-down"></span>
                   </a>
                   <input type="checkbox" id="show-home" />
-                  <label for="show-home">
+                  <label class="mobile__chevron" for="show-home">
                     HOME <span class="fa fa-chevron-down"></span>
                   </label>
                   <ul>
@@ -102,7 +102,7 @@
                         >Multi-Page <span class="fa fa-chevron-right"></span
                       ></a>
                       <input type="checkbox" id="show-home-items" />
-                      <label for="show-home-items"
+                      <label class="mobile__chevron" for="show-home-items"
                         >Multi-Page <span class="fa fa-chevron-down"></span
                       ></label>
                       <ul>
@@ -163,7 +163,7 @@
                         >One-Page <span class="fa fa-chevron-right"></span
                       ></a>
                       <input type="checkbox" id="show-home-items2" />
-                      <label for="show-home-items2"
+                      <label class="mobile__chevron" for="show-home-items2"
                         >One-Page <span class="fa fa-chevron-down"></span
                       ></label>
                       <ul>
@@ -226,7 +226,7 @@
                     >PAGES <span class="fa fa-chevron-down"></span
                   ></a>
                   <input type="checkbox" id="show-pages" />
-                  <label for="show-pages"
+                  <label class="mobile__chevron" for="show-pages"
                     >PAGES <span class="fa fa-chevron-down"></span
                   ></label>
                   <ul>
@@ -235,7 +235,7 @@
                         >About <span class="fa fa-chevron-right ml-1"></span
                       ></a>
                       <input type="checkbox" id="show-about-items" />
-                      <label for="show-about-items"
+                      <label class="mobile__chevron" for="show-about-items"
                         >About <span class="fa fa-chevron-down"></span
                       ></label>
                       <ul>
@@ -254,7 +254,7 @@
                         <span class="fa fa-chevron-right"></span
                       ></a>
                       <input type="checkbox" id="show-services-items" />
-                      <label for="show-services-items"
+                      <label class="mobile__chevron" for="show-services-items"
                         >Single Services <span class="fa fa-chevron-down"></span
                       ></label>
                       <ul>
@@ -281,7 +281,7 @@
                         >Contact <span class="fa fa-chevron-right"></span
                       ></a>
                       <input type="checkbox" id="show-contact-items" />
-                      <label for="show-contact-items"
+                      <label class="mobile__chevron" for="show-contact-items"
                         >Contact <span class="fa fa-chevron-down"></span
                       ></label>
                       <ul>
@@ -302,7 +302,7 @@
                     >BLOG <span class="fa fa-chevron-down"></span
                   ></a>
                   <input type="checkbox" id="show-blog" />
-                  <label for="show-blog"
+                  <label class="mobile__chevron" for="show-blog"
                     >BLOG <span class="fa fa-chevron-down"></span
                   ></label>
                   <ul>
@@ -311,7 +311,7 @@
                         >Blog Post <span class="fa fa-chevron-right"></span
                       ></a>
                       <input type="checkbox" id="show-blog-items" />
-                      <label for="show-blog-items"
+                      <label class="mobile__chevron" for="show-blog-items"
                         >Blog Post <span class="fa fa-chevron-down"></span
                       ></label>
                       <ul>
@@ -333,7 +333,7 @@
                     >PARTS <span class="fa fa-chevron-down"></span
                   ></a>
                   <input type="checkbox" id="show-services" />
-                  <label for="show-services"
+                  <label class="mobile__chevron" for="show-services"
                     >PARTS &nbsp; <span class="fa fa-chevron-down"></span
                   ></label>
                   <ul>
@@ -351,18 +351,44 @@
               </ul>
             </div>
 
-            <div class="search-content p-5">
-              salom dunyo
-              <label for="show-search" class="cancel-search"
+            <div class="search-content">
+              <label for="show-search" class="cancel__arrow"
                 ><i class="fa fa-arrow-right"></i
               ></label>
+              <div class="search__form h-100 my-auto">
+                <h1>What are you looking for?</h1>
+                <div class="badges">
+                  <span class="badge">Consulting</span>
+                  <span class="badge">Audit</span>
+                  <span class="badge">Assurance</span>
+                  <span class="badge">Advisory</span>
+                  <span class="badge">Financial</span>
+                  <span class="badge">Capital Markets</span>
+                </div>
+                <input
+                  class="w-100"
+                  type="search"
+                  placeholder="Enter keywords"
+                />
+                <button class="btn">Search</button>
+              </div>
             </div>
 
-            <div class="user-content p-5">
-              User Content
-              <label for="show-user" class="cancel-search"
+            <div class="user-content">
+              <label for="show-user" class="cancel__arrow"
                 ><i class="fa fa-arrow-right"></i
               ></label>
+
+              <div class="search__form h-100 my-auto">
+                <h1>Sign In</h1>
+                <p>
+                  Don't have an account?
+                  <a href="#">Register now.</a>
+                </p>
+                <input class="w-100" type="search" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button class="btn">Sign In</button>
+              </div>
             </div>
 
             <div

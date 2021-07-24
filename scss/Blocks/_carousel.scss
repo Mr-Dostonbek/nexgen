@@ -112,12 +112,20 @@
 
 
 @media (max-width: 767px){
+  .splide__container{
+    padding-left: 25px;
+    padding-right: 25px;
+    .splide__overlay{
+      justify-content: left;
+    }
+  }
   .splide__pagination{
     left: 84%;
   }
   .text{
     h1{
       font-size: 48px !important;
+      text-align: left !important;
     }
     .buttons{
       display: flex;
@@ -132,6 +140,12 @@
         margin-top: 0;
       }
     }
+  }
+  .text__three{
+    width: 90% !important;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 0;
   }
 }
 
@@ -154,7 +168,7 @@
   }
   .text{
     width: 90% !important;
-    text-align: left !important;
+    
     h1{
       font-size: 40px !important;
     }
@@ -180,10 +194,5 @@
   .text__two{
     width: 90%;
   }
-  .text__three{
-    width: 90% !important;
-    margin-top: 0;
-    text-align: left;
-    margin-left: 0;
-  }
+  
 }
