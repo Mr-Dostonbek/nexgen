@@ -1197,6 +1197,9 @@ nav.sticky {
     font-size: 48px !important;
     text-align: left !important;
   }
+  .text p {
+    text-align: left;
+  }
   .text .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
