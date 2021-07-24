@@ -940,6 +940,7 @@ nav.sticky {
 }
 
 .section-carousel {
+  position: relative;
   min-height: calc(100vh - 50px);
   cursor: w-resize;
 }
@@ -949,17 +950,69 @@ nav.sticky {
   height: 100%;
 }
 
-.section-carousel .carousel .carousel-indicators {
-  position: absolute;
-  top: calc(50% - 50px);
-  right: -25px;
-  left: initial;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
 .section-carousel .carousel .carousel-indicators button.active {
   background-color: #058283;
+}
+
+.section-carousel .carousel .carousel-inner {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #19191f;
+}
+
+.section-carousel .carousel .carousel-inner .carousel-item {
+  height: calc(100vh - 100px);
+}
+
+.section-carousel .carousel .carousel-inner .carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 11;
+}
+
+.section-carousel .carousel .carousel-inner .carousel-item img {
+  width: 100px;
+  height: calc(100vh - 100px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+.section-carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  top: 25%;
+  z-index: 555;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.section-carousel .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+  font-size: 72px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 24px 0;
+}
+
+.section-carousel .carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 19.2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 24px 0;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -980,9 +1033,9 @@ nav.sticky {
   border: 0;
   border-radius: 5px;
   border: 1px solid #058283;
-  opacity: .5;
-  -webkit-transition: opacity .6s ease;
-  transition: opacity .6s ease;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
 }
 
 @media (max-width: 992px) {

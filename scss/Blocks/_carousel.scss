@@ -1,36 +1,84 @@
-.section-carousel{
+.section-carousel {
+  position: relative;
   min-height: calc(100vh - 50px);
-    cursor: w-resize;
-  .carousel{
+  cursor: w-resize;
+  .carousel {
     width: 100%;
     height: 100%;
-    .carousel-indicators{
-      position: absolute;
-      top: calc(50% - 50px);
-      right: -25px;
-      left: initial;
-      transform: rotate(90deg);
-      button.active{
+    .carousel-indicators {
+      // position: absolute;
+      // top: calc(25% - 50px);
+      // right: -25px;
+      // left: initial;
+      // transform: rotate(90deg);
+      // z-index: 23;
+      button.active {
         background-color: $primary-color;
+      }
+    }
+    .carousel-inner {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: $section-1-bg-color;
+      .carousel-item {
+        height: calc(100vh - 100px);
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.3);
+          z-index: 11;
+        }
+        img {
+          width: 100px;
+          height: calc(100vh - 100px);
+          object-fit: cover;
+          object-position: top center;
+        }
+        .carousel-caption{
+          position: absolute;
+          top: 25%;
+          z-index: 555;
+          color: $white-color;
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+          h2{
+            font-size: 72px;
+            font-family: $h2-font;
+            font-weight: $h2-weight;
+            margin: 24px 0;
+          }
+          p{
+            font-size: 19.2px;
+            font-family: $p-font;
+            font-weight: $p-weight;
+            margin: 24px 0;
+          }
+        }
       }
     }
   }
 }
 .carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 35px;
-    height: 8px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: transparent;
-    background-clip: padding-box;
-    border: 0;
-    border-radius: 5px;
-    border: 1px solid $primary-color;
-    opacity: .5;
-    transition: opacity .6s ease; 
-  }
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 35px;
+  height: 8px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 5px;
+  border: 1px solid $primary-color;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
