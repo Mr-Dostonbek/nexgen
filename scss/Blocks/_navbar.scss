@@ -150,7 +150,7 @@ nav .content .links{
   padding: 0;
 }
 .content .links li:hover > ul{
-  top: 55px;
+  top: 53px;
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
@@ -160,7 +160,7 @@ nav .content .links{
 .content .links ul li ul li a{
   display: flex;
   justify-content: space-between;
-  width: 180px;
+  width: 165px;
   line-height: 20px;
   transition: all .4s ease-out;
 }
@@ -190,12 +190,13 @@ nav .content .links{
 
 .content .links ul li ul li a .badge,
 .content .links ul li a .badge{
-    padding: 5px 10px;
+    padding: 3px 7px;
     display: inline-block;
     border-radius: 100px;
     background-color: $primary-bg-color-3;
     text-align: center;
     font-weight: 500;
+    font-size: 12px;
     color: $primary-color;
     margin: 0;
 }
@@ -214,6 +215,92 @@ nav .content .links{
   color: $primary-color;
   transition: all .4s ease-out 0s;
 }
+
+.search-content, .user-content{
+  position: fixed;
+  top: 0;
+  right: -200%;
+  height: 100vh;
+  color: $black-color;
+  background: $white-color;
+  margin-left: 0;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+.cancel__arrow{
+  padding: 25px;
+  color: $primary-t-color;
+  cursor: pointer;
+  i{
+    font-size: 19px;
+    font-weight: 900;
+
+  }
+}
+.search__form{
+  padding: 25px 25px 75px;
+  h1{
+    font-size: 48px;
+    color: $primary-t-color;
+    font-weight: 900;
+    margin: 24px 0;
+  }
+  .badges{
+    .badge{
+      margin: 0 10px 12.5px 0;
+    }
+  }
+  p{
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    a{
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+  input{
+    width: 100%;
+    height: 50px;
+    background: no-repeat;
+    box-shadow: none;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: none;
+    border-radius: 4px;
+    line-height: 1.2;
+    color: var(--primary-t-color);
+    margin-bottom: 20px;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+#show-search:checked ~ .search-content{
+  right: 0;
+  transition: all 0.3s ease;
+}
+
+#show-user:checked ~ .user-content{
+  right: 0;
+  transition: all 0.3s ease;
+}
+
+nav.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $header-bg-color;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  z-index: 9000;
+}
+
 
 
 /* Responsive code start */
@@ -308,89 +395,14 @@ nav .content .links{
     border-radius: 5px!important;
   }
 }
-.search-content, .user-content{
-  position: fixed;
-  top: 0;
-  right: -200%;
-  height: 100vh;
-  color: $black-color;
-  background: $white-color;
-  margin-left: 0;
-  max-width: 500px;
-  transition: all 0.3s ease;
-}
-.cancel__arrow{
-  padding: 25px;
-  color: $primary-t-color;
-  cursor: pointer;
-  i{
-    font-size: 19px;
-    font-weight: 900;
 
-  }
-}
-.search__form{
-  padding: 25px 25px 75px;
-  h1{
-    font-size: 48px;
-    color: $primary-t-color;
-    font-weight: 900;
-    margin: 24px 0;
-  }
-  .badges{
-    .badge{
-      margin: 0 10px 12.5px 0;
+@media (max-width: 767px) {
+  .wrapper{
+    .container-xl {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
-  p{
-    margin: 1.5rem 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    a{
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: $primary-color;
-      text-decoration: none;
-    }
-  }
-  input{
-    width: 100%;
-    height: 50px;
-    background: no-repeat;
-    box-shadow: none;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.075);
-    border: none;
-    border-radius: 4px;
-    line-height: 1.2;
-    color: var(--primary-t-color);
-    margin-bottom: 20px;
-    &:focus{
-      outline: none;
-    }
-  }
-}
-
-#show-search:checked ~ .search-content{
-  right: 0;
-  transition: all 0.3s ease;
-}
-
-#show-user:checked ~ .user-content{
-  right: 0;
-  transition: all 0.3s ease;
-}
-
-nav.sticky{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: $header-bg-color;
-  padding: 10px 0;
-  transition: all 0.3s ease;
-  z-index: 9000;
 }
 
 @media (min-width: 576px){
