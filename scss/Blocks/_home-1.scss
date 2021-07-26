@@ -1,0 +1,131 @@
+// Video section
+
+.video-section{
+  @include section-padding;
+  width: 100%;
+  background-color: $white-color;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  .video-container{
+    // max-width: 970px;
+    .video__content {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+      .video__img{
+        // max-width: 900px;
+        opacity: 0.9;
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 4px;
+
+        &:hover{
+          opacity: 0.85;
+          transition: 0.5s;
+        }
+
+        &:hover ~ span{
+          font-size: 6rem;
+          transition: 0.5s;
+          opacity: 1;
+        }
+      }
+      .video__icon {
+        margin: 0;
+        font-size: 5rem;
+        line-height: 5rem;
+        font-weight: bold;
+        position: absolute;
+        color: $white-color;
+        cursor: pointer;
+        opacity: 0.75;
+        transition: 0.5s;
+        &:hover{
+          font-size: 6rem;
+          opacity: 1;
+          transition: 0.5s;
+        }
+        &:hover ~ span{
+          font-size: 6rem;
+          opacity: 1;
+          transition: 0.5s;
+        }
+        &:hover .video__img{
+          opacity: 0.85;
+        }
+      }
+      .video__play__icon{
+        top: 34%;
+        left: 47%;
+        color: $white-color;
+        z-index: 2;
+      }
+      .video__play__opacity{
+        top: 34%;
+        left: 47%;
+        transform: translateX(0%);
+        transform: translateY(-13%);
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.video__title{
+  text-align: center;
+  h2{
+    font-size: 48px;
+    color: $primary-t-color;
+    font-weight: 900;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    margin:  1.5rem 0;
+    .logo-befor{
+      position: relative;
+      display: inline-block;
+      .part1{
+        position: relative;
+        left: 0px;
+        color: $secondary-color;
+      }
+    }
+    .part2{
+      color: $secondary-p-color;
+    }
+    .logo-befor::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 13px;
+      background-color: $secondary-color;
+      opacity: 0.15;
+      border-radius: 4px;
+    }
+  }
+  p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: $p-size;
+    font-weight: $p-weight;
+    line-height: 1;
+    color: $primary-p-color;
+    margin-bottom: 48px;
+  }
+}
+
+// Responsive code 
+
+@media (max-width: 992px) {
+  .video-container{
+    max-width: 970px
+  }
+  .video__title{
+    h2{
+      font-size: 32px;
+    }
+  }
+}

@@ -84,6 +84,10 @@
 }
 
 @media (max-width: 1199.98px){
+  .splide__container{
+    padding-left: 37px;
+    padding-right: 37px;
+  }
   .splide__pagination{
     left: 90%;
   }
@@ -100,10 +104,6 @@
   .splide__slide{
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  .splide__container{
-    padding-left: 37px;
-    padding-right: 37px;
   }
   .splide__pagination{
     left: 88%;
