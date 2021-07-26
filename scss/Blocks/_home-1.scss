@@ -1,32 +1,32 @@
 // Video section
 
-.video-section{
+.video-section {
   @include section-padding;
   width: 100%;
   background-color: $white-color;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  .video-container{
+  .video-container {
     // max-width: 970px;
     .video__content {
       position: relative;
       display: flex;
       justify-content: center;
       justify-content: center;
-      .video__img{
+      .video__img {
         // max-width: 900px;
         opacity: 0.9;
         cursor: pointer;
         transition: 0.5s;
         border-radius: 4px;
 
-        &:hover{
+        &:hover {
           opacity: 0.85;
           transition: 0.5s;
         }
 
-        &:hover ~ span{
+        &:hover ~ span {
           font-size: 6rem;
           transition: 0.5s;
           opacity: 1;
@@ -42,27 +42,27 @@
         cursor: pointer;
         opacity: 0.75;
         transition: 0.5s;
-        &:hover{
+        &:hover {
           font-size: 6rem;
           opacity: 1;
           transition: 0.5s;
         }
-        &:hover ~ span{
+        &:hover ~ span {
           font-size: 6rem;
           opacity: 1;
           transition: 0.5s;
         }
-        &:hover .video__img{
+        &:hover .video__img {
           opacity: 0.85;
         }
       }
-      .video__play__icon{
+      .video__play__icon {
         top: 34%;
         left: 42%;
         color: $white-color;
         z-index: 2;
       }
-      .video__play__opacity{
+      .video__play__opacity {
         top: 34%;
         left: 42%;
         transform: translateX(0%);
@@ -73,28 +73,28 @@
   }
 }
 
-.video__title{
+.video__title {
   text-align: center;
-  h2{
+  h2 {
     font-size: 48px;
     color: $primary-t-color;
     font-weight: 900;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     word-wrap: break-word;
-    margin:  1.5rem 0;
-    .logo-befor{
+    margin: 1.5rem 0;
+    .logo-befor {
       position: relative;
       display: inline-block;
-      .part1{
+      .part1 {
         position: relative;
         left: 0px;
         color: $secondary-color;
       }
     }
-    .part2{
+    .part2 {
       color: $secondary-p-color;
     }
-    .logo-befor::before{
+    .logo-befor::before {
       content: "";
       width: 100%;
       height: 100%;
@@ -106,7 +106,7 @@
       border-radius: 4px;
     }
   }
-  p{
+  p {
     max-width: 800px;
     margin: 0 auto;
     font-size: $p-size;
@@ -117,21 +117,84 @@
   }
 }
 
-// Responsive code 
+// Responsive code
 
 @media (max-width: 991.98px) {
-  .video-container{
-    max-width: 970px
+  .video-container {
+    max-width: 970px;
   }
-  .video__title{
-    h2{
+  .video__title {
+    h2 {
       font-size: 32px;
     }
   }
 }
 
 @media (max-width: 767.98px) {
-  .video-section{
+  .video-section {
     @include section-smaller-padding;
+  }
+}
+
+// Video section end
+
+// Counter section start
+
+.counter-section {
+  position: relative;
+  @include section-padding;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -20;
+  }
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: grayscale(1);
+    z-index: -21;
+  }
+  .counter-container {
+    z-index: 999;
+  }
+  .counts{
+    margin-top: 3rem;
+    .count{
+      vertical-align: baseline;
+      span{
+        font-size: 2.5rem;
+        color: $secondary-color;
+        font-weight: 700;
+        line-height: 1.5;
+        font-family: "Monserrat", Arial, Helvetica, sans-serif;
+      }
+      h3{
+        color: $secondary-t-color;
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .counter-section{
+    @include section-smaller-padding;
+  }
+  .counter-container{
+    .text-white{
+      font-size: 32px;
+    }
   }
 }

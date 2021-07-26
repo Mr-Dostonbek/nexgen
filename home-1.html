@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css"
     />
-    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="assets/splide-2.4.21/dist/css/splide.min.css"
@@ -480,42 +480,106 @@
     </div>
 
     <main>
+      <!-- Video section start -->
 
       <section class="video-section">
         <div class="container video-container">
-
-          <div class="row" data-aos="flip-right" data-aos-duration="1000">
+          <div class="row">
             <div class="col video__title">
-                <span class="built-text">INTRODUCTION VIDEO</span>
-                <h2>
-                  Advisory<span class="logo-befor"><span class="part1">Performance</span></span>
-                </h2>
-                <p>Financial executives need to review their strategies, operating models and capabilities so that their areas can generate sound information for better decision making.</p>
+              <span class="built-text">INTRODUCTION VIDEO</span>
+              <h2>
+                Advisory<span class="logo-befor"
+                  ><span class="part1">Performance</span></span
+                >
+              </h2>
+              <p>
+                Financial executives need to review their strategies, operating
+                models and capabilities so that their areas can generate sound
+                information for better decision making.
+              </p>
             </div>
           </div>
 
           <div class="row">
             <div class="col">
               <div class="video__content">
-                <img width="900" class="video__img" src="assets/images/sections/video-1.jpg" alt="">
+                <img
+                  width="900"
+                  class="video__img"
+                  src="assets/images/sections/video-1.jpg"
+                  alt=""
+                />
                 <span class="video__icon video__play__icon fas fa-play"></span>
-                <span class="video__icon video__play__opacity fas fa-play"></span>
+                <span
+                  class="video__icon video__play__opacity fas fa-play"
+                ></span>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          
+      <!-- Video section end -->
+
+      <!-- Counter section start -->
+
+      <section class="counter-section position-relative">
+
+        <video class="counter-bg-video" autoplay muted loop>
+          <source src="assets/images/Video/city.mp4" type="video/mp4" >
+        </video>
+
+        <div class="container-lg counter-container">
+
+          <div class="row w-100">
+            <div class="col video__title">
+              <span class="built-text">WHAT ARE WE DOING</span>
+              <h2 class="text-white">
+                <span class="logo-befor"><span class="part1 text-white">Results</span></span> &nbsp; in Numbers
+              </h2>
+            </div>
+          </div>
+        
+          <div class="row justify-content-between align-items-center justify-content-lg-center counts">
+
+            <div class="col-md-6 col-lg-3 mb-2 mb-lg-0 count text-center">
+              <div>
+                <span data-purecounter-duration="2.5" data-purecounter-end="128" class="purecounter">0</span>
+                <h3>Certifications</h3>
+            </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-2 mb-lg-0 count text-center">
+              <div>
+                  <span data-purecounter-duration="2.5" data-purecounter-end="230" class="purecounter">0</span>
+                <h3>Employees</h3>
+            </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-2 mb-lg-0 count text-center">
+              <div>
+                  <span data-purecounter-duration="2.5" data-purecounter-end="517" class="purecounter">0</span>
+                <h3>Customers</h3>
+            </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-2 mb-lg-0 count text-center">
+              <div>
+                <span data-purecounter-duration="2.5" data-purecounter-end="94" class="purecounter">0</span>
+                <h3>Countries Served</h3>
+            </div>
+            </div>
+          </div>
 
         </div>
       </section>
 
+      <!-- Counter section end -->
     </main>
-   
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/splide-2.4.21/dist/js/splide.min.js"></script>
-    <script src="assets/js/script.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         new Splide("#card-slider", {
@@ -532,5 +596,7 @@
     <script>
       AOS.init();
     </script>
+    <script async src="assets/js/purecounter.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

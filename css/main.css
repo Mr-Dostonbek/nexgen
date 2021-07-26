@@ -1,5 +1,38 @@
 @import url(d:\Project\Nexgen\assets\splide-2.4.21\dist\css\themes\splide-sea-green.min.css);
 @import url(d:\Project\Nexgen\assets\splide-2.4.21\dist\css\themes\splide-skyblue.min.css);
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'sans-serif';
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Poppins';
   src: url("../fonts/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins-Black.woff") format("woff");
@@ -62,39 +95,6 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', 'sans-serif';
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
 }
 
 .btn {
@@ -1575,7 +1575,7 @@ nav.sticky {
   font-size: 48px;
   color: #21333e;
   font-weight: 900;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   word-wrap: break-word;
   margin: 1.5rem 0;
 }
@@ -1630,6 +1630,74 @@ nav.sticky {
   .video-section {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+}
+
+.counter-section {
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.counter-section::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -20;
+}
+
+.counter-section video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  z-index: -21;
+}
+
+.counter-section .counter-container {
+  z-index: 999;
+}
+
+.counter-section .counts {
+  margin-top: 3rem;
+}
+
+.counter-section .counts .count {
+  vertical-align: baseline;
+}
+
+.counter-section .counts .count span {
+  font-size: 2.5rem;
+  color: #00a6a6;
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: "Monserrat", Arial, Helvetica, sans-serif;
+}
+
+.counter-section .counts .count h3 {
+  color: #f9f9f9;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 767.98px) {
+  .counter-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .counter-container .text-white {
+    font-size: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
