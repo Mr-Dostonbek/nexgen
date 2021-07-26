@@ -305,12 +305,16 @@ nav.sticky{
 
 /* Responsive code start */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1198.98px){
   .wrapper{
     top: 0;
     padding-left: 25px;
     padding-right: 25px;
     cursor: w-resize;
+    .container-xl{
+      padding-left: 25px;
+      padding-right: 25px;
+  }
   }
   .wrapper .menu-icon{
     display: block;
@@ -396,13 +400,8 @@ nav.sticky{
   }
 }
 
-@media (max-width: 767px) {
-  .wrapper{
-    .container-xl {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
+@media (max-width: 992px) {
+  
 }
 
 @media (min-width: 576px){
