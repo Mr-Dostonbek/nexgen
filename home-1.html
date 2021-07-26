@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css"
     />
+    <link href="css/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="assets/splide-2.4.21/dist/css/splide.min.css"
@@ -425,12 +426,12 @@
             <div class="splide__overlay">
               <div class="container-xl splide__container">
                 <div class="text text-one">
-                  <h1>Business Consulting</h1>
-                  <p>
+                  <h1 data-aos="fade-down-left">Business Consulting</h1>
+                  <p data-aos="zoom-in">
                     We drive product and service innovation, improve financial
                     performance, accelerate market speed.
                   </p>
-                  <div class="buttons">
+                  <div class="buttons" data-aos="fade-up">
                     <button class="btn">Get in touch</button>
                     <button class="btn btn-outline">read more</button>
                   </div>
@@ -526,6 +527,10 @@
           },
         }).mount();
       });
+    </script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
