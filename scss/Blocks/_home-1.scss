@@ -142,6 +142,7 @@
 
 .counter-section {
   position: relative;
+  background: $section-2-bg-color;
   @include section-padding;
   &::after {
     content: "";
