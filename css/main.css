@@ -1557,14 +1557,14 @@ nav.sticky {
 
 .video-section .video-container .video__content .video__play__icon {
   top: 34%;
-  left: 47%;
+  left: 45%;
   color: #ffffff;
   z-index: 2;
 }
 
 .video-section .video-container .video__content .video__play__opacity {
   top: 34%;
-  left: 47%;
+  left: 45%;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   -webkit-transform: translateY(-13%);
