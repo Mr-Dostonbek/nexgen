@@ -76,6 +76,9 @@ nav .content .links{
 .content .links li{
   list-style: none;
 }
+.content .links > li{
+  position: relative;
+}
 .logo-befor{
   position: relative;
   display: inline-block;
@@ -101,11 +104,12 @@ nav .content .links{
   border-radius: 100px 0 0 100px;
 }
 .content .links li a{
+  display: block;
   color: $white-color;
   font-size: 1rem;
   font-weight: 500;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  padding: 8px 16px;
+  padding: 9px 16px;
   transition: all 0.3s ease;
 }
 .content .links li label{
@@ -143,14 +147,15 @@ nav .content .links{
 .content .links ul{
   position: absolute;
   background: $white-color;
-  top: 90px;
+  // top: 90px;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
   padding: 0;
 }
 .content .links li:hover > ul{
-  top: 53px;
+  // top: 54px;
+  top: 100%;
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;

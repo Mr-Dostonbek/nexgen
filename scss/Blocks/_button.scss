@@ -6,6 +6,7 @@
   background: #058283;
   border-color: $primary-color;
   padding: 9px 25px;
+  white-space: nowrap;
   transition: all .4s ease-out 0s;
   &:hover{
     background: $secondary-color;

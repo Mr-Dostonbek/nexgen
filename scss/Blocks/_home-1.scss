@@ -57,16 +57,18 @@
         }
       }
       .video__play__icon {
-        top: 34%;
-        left: 42%;
+        top: 50%;
+        left: 50%;
         color: $white-color;
         z-index: 2;
+        transform: translate(-50%, -38%);
       }
       .video__play__opacity {
-        top: 34%;
-        left: 42%;
-        transform: translateX(0%);
-        transform: translateY(-13%);
+        top: 50%;
+        left: 50%;
+        // transform: translateX(0%);
+        // transform: translateY(-13%);
+        transform: translate(-50%, -50%);
         color: $secondary-color;
       }
     }
@@ -199,3 +201,133 @@
     }
   }
 }
+
+// Counter section end
+
+// Services section start
+
+.sevices-section{
+  @include section-padding;
+  background-color: $section-3-bg-color;
+  background-attachment: fixed;
+  .services-container{
+    .video__title{
+      max-width: 100%;
+      text-align: left;
+      h2{
+        color: $white-color;
+        span{
+          color: $white-color;
+          
+        }
+      }
+      .p{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 48px;
+        span{
+          max-width: 75%;
+          color: $secondary-p-color;
+        }
+        button{
+          margin-left: auto;
+        }
+      }
+    }
+    .built-card{
+      position: relative;
+      z-index: 1;
+      max-width: 100%;
+      padding: 45px;
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 30px;
+      transition: all .4s ease-out 0s;
+      background-color: rgba(255, 255, 255, 0.035);
+      &:hover::before{
+        background: transparent;
+      }
+      &:hover {
+        transform: translateY(-7.5px);
+        transition: all .4s ease-out 0s;
+      }
+      &:hover .services__content__icon{
+        transition: all .4s ease-out 0s;
+        color: $white-color;
+      }
+      &:hover p{
+        transition: all .4s ease-out 0s;
+        color: $white-color;
+      }
+      .services-icon{
+        top: 48px;
+      }
+      .services__content__icon{
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        transition: all .4s ease-out 0s;
+        font-size: 44px;
+        display: block;
+        color: $primary-color;
+      }
+      
+      h4{
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: $secondary-t-color;
+      }
+      p{
+        margin: 0 0 10px;
+        white-space: pre-wrap;
+        transition: all .4s ease-out 0s;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: $secondary-p-color;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1198.98px) {
+  .services-container{
+    padding: 0 25px;
+    
+  }
+}
+
+@media (max-width: 767.98px) {
+  .sevices-section{
+    @include section-smaller-padding;
+    .services-container{
+      .video__title{
+        max-width: 100%;
+        text-align: center;
+        h2{
+          font-size: 32px;
+        }
+        .p{
+          max-width: 100%;
+          flex-direction: column;
+          span{
+            display: block;
+            max-width: 100%;
+            color: $secondary-p-color;
+          }
+          button{
+            margin: 0 auto;
+            margin-top: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Services section end
