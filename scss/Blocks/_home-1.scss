@@ -674,3 +674,71 @@
 }
 
 // News section end
+
+// Newsletter section start
+
+.newsletter-section{
+  @include section-padding;
+  background: $section-6-bg-color;
+  .newsletter__title{
+    max-width: 485px;
+    .video__title{
+      text-align: left;
+      .title{
+        position: relative;
+        left: -13px;
+      }
+      p{
+        color: $secondary-p-color;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .form__content{
+    max-width: 485px;
+    input{
+      width: 100%;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: none;
+      padding: 1rem;
+      // background-color: rgba(0, 0, 0, 0.075);
+      border: none;
+      border-radius: 4px;
+      line-height: 1.2;
+      margin: 10px 0;
+      &:focus{
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1198.98px) {
+  .newsletter-section{
+    .container-xl{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .newsletter-section{
+    @include section-smaller-padding;
+    .newsletter__title{
+      max-width: 100%;
+      .video__title{
+        p{
+          margin-bottom: 48px;
+        }
+      }
+    }
+    .form__content{
+      max-width: 100%;
+    }
+  }
+}
+
+  // Newsletter section end
