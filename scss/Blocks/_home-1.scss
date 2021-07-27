@@ -536,7 +536,9 @@
       align-items: center;
 
       span {
+        color: $primary-p-color;
         max-width: 75%;
+        font-size: 16px;
       }
     }
   }
@@ -656,6 +658,18 @@
 @media (max-width: 767.98px) {
   .news-section{
     @include section-smaller-padding;
+    .video__title{
+      text-align: center;
+      .p{
+        flex-direction: column;
+        span{
+          max-width: 100%;
+        }
+        .btn{
+          margin-top: 24px;
+        }
+      }
+    }
   }
 }
 
