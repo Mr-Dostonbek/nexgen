@@ -2247,4 +2247,117 @@ nav.sticky {
     max-width: 100%;
   }
 }
+
+.touch-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background: #ffffff;
+}
+
+.touch-section .contact-column-1 {
+  max-width: 780px;
+}
+
+.touch-section .contact-column-1 .video__title {
+  text-align: left;
+}
+
+.touch-section .contact-column-1 textarea {
+  min-height: 152px;
+}
+
+.touch-section .contact-column-2 h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #21333e;
+  overflow-wrap: break-word;
+  margin-bottom: 1.5rem;
+}
+
+.touch-section .contact-column-2 p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 1.5rem 0px;
+  color: #606d75;
+}
+
+.touch-section .contact-column-2 .last-p {
+  margin-bottom: 37px;
+}
+
+.touch-section .contact-column-2 .contact-items .contact-item {
+  margin: 21px 0px;
+  line-height: 1.5;
+}
+
+.touch-section .contact-column-2 .contact-items .contact-item a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #058283;
+  padding: 5px 0px;
+}
+
+.touch-section .contact-column-2 .contact-items .contact-item a span {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  background: rgba(5, 130, 131, 0.15);
+  border-radius: 100px;
+  margin-right: 8px;
+  color: #058283;
+}
+
+.touch-section .contact-column-2 .contact-items button {
+  color: #058283;
+  margin-left: 0;
+}
+
+.touch-section .contact-column-2 .contact-items button:hover {
+  color: #ffffff;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  background: no-repeat;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.075);
+  border: none;
+  border-radius: 4px;
+  line-height: 1.2;
+  color: #6c757d;
+}
+
+.input:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .contact-column-1 {
+    padding-right: 48px;
+  }
+}
+
+@media (max-width: 1198.98px) {
+  .touch-section .container-xl {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .touch-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .touch-section .contact-column-2 {
+    margin-top: 40px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

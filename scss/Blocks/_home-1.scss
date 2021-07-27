@@ -741,3 +741,112 @@
 }
 
   // Newsletter section end
+
+  // Touch section start
+
+  .touch-section{
+    @include section-padding;
+    background: $white-color;
+    .contact-column-1{
+      max-width: 780px;
+      .video__title{
+        text-align: left;
+      }
+      textarea{
+        min-height: 152px;
+      }
+    }
+    .contact-column-2{
+      h4{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: $primary-t-color;
+        overflow-wrap: break-word;
+        margin-bottom: 1.5rem;
+      }
+      p{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 1.5rem 0px;
+        color: $primary-p-color;
+      }
+      .last-p{
+        margin-bottom: 37px;
+      }
+      .contact-items{
+        .contact-item{
+          margin: 21px 0px;
+          line-height: 1.5;
+          a{
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $primary-color;
+            padding: 5px 0px;
+            span{
+              width: 45px;
+              height: 45px;
+              text-align: center;
+              line-height: 45px;
+              font-size: 20px;
+              background: $primary-bg-color-3;
+              border-radius: 100px;
+              margin-right: 8px;
+              color: $primary-color;
+            }
+          }
+        }
+        button{
+          color: $primary-color;
+          margin-left: 0;
+          &:hover{
+            color: $white-color;
+          }
+        }
+      }
+    }
+
+  }
+
+  .input{
+    width: 100%;
+    height: 50px;
+    background: no-repeat;
+    box-shadow: none;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: none;
+    border-radius: 4px;
+    line-height: 1.2;
+    color: rgb(108, 117, 125);
+    &:focus{
+      outline: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contact-column-1{
+      padding-right: 48px;
+    }
+  }
+
+  @media (max-width: 1198.98px) {
+    .touch-section{
+      .container-xl{
+        padding-right: 25px;
+        padding-left: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .touch-section{
+      @include section-smaller-padding;
+      .contact-column-2{
+        margin-top: 40px;
+      }
+    }
+  }
+
+  // Touch section end
