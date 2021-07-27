@@ -30,3 +30,23 @@ window.addEventListener("scroll", function(){
     header.classList.remove("sticky");
   }
 });
+
+
+// news section slider
+
+new Glide(".images",{
+  type: 'carousel',
+  perView: 3,
+  gap: 40,
+  breakpoints: {
+    1200:{
+      perView: 3
+    },
+    1022:{
+      perView: 2
+    },
+    767:{
+      perView: 1
+    }
+  }
+}).mount();

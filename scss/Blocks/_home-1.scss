@@ -7,13 +7,16 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+
   .video-container {
+
     // max-width: 970px;
     .video__content {
       position: relative;
       display: flex;
       justify-content: center;
       justify-content: center;
+
       .video__img {
         // max-width: 900px;
         opacity: 0.9;
@@ -26,12 +29,13 @@
           transition: 0.5s;
         }
 
-        &:hover ~ span {
+        &:hover~span {
           font-size: 6rem;
           transition: 0.5s;
           opacity: 1;
         }
       }
+
       .video__icon {
         margin: 0;
         font-size: 5rem;
@@ -42,20 +46,24 @@
         cursor: pointer;
         opacity: 0.75;
         transition: 0.5s;
+
         &:hover {
           font-size: 6rem;
           opacity: 1;
           transition: 0.5s;
         }
-        &:hover ~ span {
+
+        &:hover~span {
           font-size: 6rem;
           opacity: 1;
           transition: 0.5s;
         }
+
         &:hover .video__img {
           opacity: 0.85;
         }
       }
+
       .video__play__icon {
         top: 50%;
         left: 50%;
@@ -63,6 +71,7 @@
         z-index: 2;
         transform: translate(-50%, -38%);
       }
+
       .video__play__opacity {
         top: 50%;
         left: 50%;
@@ -77,25 +86,32 @@
 
 .video__title {
   text-align: center;
+
   h2 {
     font-size: 48px;
     color: $primary-t-color;
     font-weight: 900;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     word-wrap: break-word;
+    padding: 0;
+    line-height: 0.9;
     margin: 1.5rem 0;
+
     .logo-befor {
       position: relative;
       display: inline-block;
+
       .part1 {
         position: relative;
         left: 0px;
         color: $secondary-color;
       }
     }
+
     .part2 {
       color: $secondary-p-color;
     }
+
     .logo-befor::before {
       content: "";
       width: 100%;
@@ -108,6 +124,7 @@
       border-radius: 4px;
     }
   }
+
   p {
     max-width: 800px;
     margin: 0 auto;
@@ -125,6 +142,7 @@
   .video-container {
     max-width: 970px;
   }
+
   .video__title {
     h2 {
       font-size: 32px;
@@ -146,6 +164,7 @@
   position: relative;
   background: $section-2-bg-color;
   @include section-padding;
+
   &::after {
     content: "";
     width: 100%;
@@ -156,6 +175,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     z-index: -20;
   }
+
   video {
     position: absolute;
     width: 100%;
@@ -166,21 +186,26 @@
     filter: grayscale(1);
     z-index: -21;
   }
+
   .counter-container {
     z-index: 999;
   }
-  .counts{
+
+  .counts {
     margin-top: 3rem;
-    .count{
+
+    .count {
       vertical-align: baseline;
-      span{
+
+      span {
         font-size: 2.5rem;
         color: $secondary-color;
         font-weight: 700;
         line-height: 1.5;
         font-family: "Monserrat", Arial, Helvetica, sans-serif;
       }
-      h3{
+
+      h3 {
         color: $secondary-t-color;
         margin: 1.5rem 0;
         font-size: 1.5rem;
@@ -192,11 +217,12 @@
 }
 
 @media (max-width: 767.98px) {
-  .counter-section{
+  .counter-section {
     @include section-smaller-padding;
   }
-  .counter-container{
-    .text-white{
+
+  .counter-container {
+    .text-white {
       font-size: 32px;
     }
   }
@@ -206,38 +232,45 @@
 
 // Services section start
 
-.sevices-section{
+.sevices-section {
   @include section-padding;
   background-color: $section-3-bg-color;
   background-attachment: fixed;
-  .services-container{
-    .video__title{
+
+  .services-container {
+    .video__title {
       max-width: 100%;
       text-align: left;
-      h2{
+
+      h2 {
         color: $white-color;
-        span{
+
+        span {
           color: $white-color;
-          
+
         }
       }
-      .p{
+
+      .p {
         max-width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 24px;
         margin-bottom: 48px;
-        span{
+
+        span {
           max-width: 75%;
           color: $secondary-p-color;
         }
-        button{
+
+        button {
           margin-left: auto;
         }
       }
     }
-    .built-card{
+
+    .built-card {
       position: relative;
       z-index: 1;
       max-width: 100%;
@@ -247,25 +280,31 @@
       margin-bottom: 30px;
       transition: all .4s ease-out 0s;
       background-color: rgba(255, 255, 255, 0.035);
-      &:hover::before{
+
+      &:hover::before {
         background: transparent;
       }
+
       &:hover {
         transform: translateY(-7.5px);
         transition: all .4s ease-out 0s;
       }
-      &:hover .services__content__icon{
+
+      &:hover .services__content__icon {
         transition: all .4s ease-out 0s;
         color: $white-color;
       }
-      &:hover p{
+
+      &:hover p {
         transition: all .4s ease-out 0s;
         color: $white-color;
       }
-      .services-icon{
+
+      .services-icon {
         top: 48px;
       }
-      .services__content__icon{
+
+      .services__content__icon {
         width: 44px;
         height: 44px;
         text-align: center;
@@ -274,15 +313,16 @@
         display: block;
         color: $primary-color;
       }
-      
-      h4{
+
+      h4 {
         margin: 1.5rem 0;
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 1.2;
         color: $secondary-t-color;
       }
-      p{
+
+      p {
         margin: 0 0 10px;
         white-space: pre-wrap;
         transition: all .4s ease-out 0s;
@@ -296,31 +336,36 @@
 
 
 @media (max-width: 1198.98px) {
-  .services-container{
+  .services-container {
     padding: 0 25px;
-    
+
   }
 }
 
 @media (max-width: 767.98px) {
-  .sevices-section{
+  .sevices-section {
     @include section-smaller-padding;
-    .services-container{
-      .video__title{
+
+    .services-container {
+      .video__title {
         max-width: 100%;
         text-align: center;
-        h2{
+
+        h2 {
           font-size: 32px;
         }
-        .p{
+
+        .p {
           max-width: 100%;
           flex-direction: column;
-          span{
+
+          span {
             display: block;
             max-width: 100%;
             color: $secondary-p-color;
           }
-          button{
+
+          button {
             margin: 0 auto;
             margin-top: 28px;
           }
@@ -334,80 +379,90 @@
 
 // Team section start
 
-.team-section{
+.team-section {
   @include section-padding;
-  .video__title{
+
+  .video__title {
     color: $primary-t-color;
-    .title{
+
+    .title {
       position: relative;
       left: -13px;
-    }  
-    p{
+    }
+
+    p {
       margin-bottom: 0;
       font-size: 1rem;
       line-height: 1.5;
     }
   }
-  
+
 }
 
-.team_user_section > div:nth-child(1){
+.team_user_section>div:nth-child(1) {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.team_users{
+.team_users {
   align-items: center;
-  .team__user{
+
+  .team__user {
     // padding: 0;
     padding-right: 16px;
   }
-    img{
-      border-radius: 5px;
-      width: 100%;
-    }
-    h3{
-      font-size: 1.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      color: $primary-t-color;
-      margin: 0 0 10px;
-    }
-    p{
-      margin: 10px 0;
-      font-size: 14px;
-      font-weight: 500;
-      white-space: pre-wrap;
-      line-height: 1.5;
-    }
-    .contact{
-      li{
-        display: inline-block;
-        a{
-          span{
-            width: 40px;
-            height: 40px;
-            margin-right: 5px;
-            display: inline-block;
-            background: $primary-bg-color-3;
-            border-radius: 100px;
-            text-align: center;
-            line-height: 40px;
-            font-size: 18px;
-            color: $primary-color;
+
+  img {
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $primary-t-color;
+    margin: 0 0 10px;
+  }
+
+  p {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
+
+  .contact {
+    li {
+      display: inline-block;
+
+      a {
+        span {
+          width: 40px;
+          height: 40px;
+          margin-right: 5px;
+          display: inline-block;
+          background: $primary-bg-color-3;
+          border-radius: 100px;
+          text-align: center;
+          line-height: 40px;
+          font-size: 18px;
+          color: $primary-color;
+          transition: all .2s ease-out 0s;
+
+          &:hover {
+            background: $primary-color;
+            color: $white-color;
             transition: all .2s ease-out 0s;
-            &:hover{
-              background: $primary-color;
-              color: $white-color;
-              transition: all .2s ease-out 0s;
-            }
           }
         }
       }
     }
+  }
 }
 
-.president__speech{
+.president__speech {
   position: relative;
   width: 100%;
   height: auto;
@@ -415,7 +470,8 @@
   background-color: $primary-color;
   border-radius: 4px;
   color: $primary-bg-color-2;
-  h4{
+
+  h4 {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.2;
@@ -423,18 +479,21 @@
     margin-bottom: 24px;
     color: $white-color;
   }
-  p{
+
+  p {
     line-height: 1.5;
     opacity: 0.85;
     margin-bottom: 24px;
   }
-  h5{
+
+  h5 {
     color: $white-color;
     opacity: 0.85;
     font-size: 1rem;
     margin-bottom: 0;
   }
-  span{
+
+  span {
     position: absolute;
     bottom: 35px;
     right: 50px;
@@ -444,8 +503,149 @@
 }
 
 @media (max-width: 1198.98px) {
-  .team-section{
+  .team-section {
     @include section-smaller-padding;
+
+    .container-xl {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .president__speech {
+    margin-top: 70px;
+  }
+}
+
+// Team section end
+
+// News section start
+
+.news-section {
+  @include section-padding;
+  background: $section-5-bg-color;
+
+  .video__title {
+    text-align: left;
+
+    .p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        max-width: 75%;
+      }
+    }
+  }
+
+  .glide__slide img {
+    width: 100%;
+  }
+
+  .glide__slides {
+    overflow: visible;
+  }
+}
+
+.glide__slides {
+  .glide__slide {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.4s ease-out 0s;
+    &:hover .glide__img img{
+      transform: scale(1.1);
+      filter: blur(2px);
+      transition: all 0.4s ease-out 0s;
+    }
+    &:hover .glide__date{
+      transform: translateY(0);
+      z-index: 4;
+      transition: all 0.4s ease-out 0s;
+    }
+    &:hover .glide__content p{
+      z-index: 4;
+      transform: translateY(-50px);
+      transition: all 0.4s ease-out 0s;
+    }
+    &:hover .glide__content h4{
+      z-index: 9999;
+      transform: translateY(-50px);
+      transition: all 0.4s ease-out 0s;
+    }
+    .glide__img {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      img{
+        max-width: 100%;
+        transition: all 0.4s ease-out 0s;
+      }
+    }
+
+    .glide__date {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      transform: translateY(-100px);
+      margin: auto;
+      padding: 50px 25px;
+      transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+      a{
+        color: #f9f9f9;
+        font-size: 16px;
+        margin: 0 10px;
+      }
+    }
+
+    .glide__content{
+      position: absolute;
+      z-index: 55;
+      bottom: 0;
+      padding: 50px 25px;
+      color: #f9f9f9;
+      h4{
+        font-size: 24px;
+        margin-bottom: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+        transition: all 0.4s ease-out 0s;
+        color: #f9f9f9;
+        z-index: 999;
+      }
+      p{
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100px);
+        color: #f9f9f9;
+        font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+        transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        line-height: 1.5;
+        font-size: 17.8px;
+        letter-spacing: 0.7px;
+        font-family: "Monserrat", Arial, Helvetica, sans-serif;
+        white-space: pre-wrap;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1198.98px) {
+  .news-section{
     .container-xl{
       padding-left: 25px;
       padding-right: 25px;
@@ -454,9 +654,9 @@
 }
 
 @media (max-width: 767.98px) {
-  .president__speech{
-    margin-top: 70px;
+  .news-section{
+    @include section-smaller-padding;
   }
 }
 
-// Team section end
+// News section end
