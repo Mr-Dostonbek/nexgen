@@ -31,6 +31,7 @@ img {
 ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 @font-face {
@@ -1855,6 +1856,145 @@ nav.sticky {
   .sevices-section .services-container .video__title .p button {
     margin: 0 auto;
     margin-top: 28px;
+  }
+}
+
+.team-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.team-section .video__title {
+  color: #21333e;
+}
+
+.team-section .video__title .title {
+  position: relative;
+  left: -13px;
+}
+
+.team-section .video__title p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.team_user_section > div:nth-child(1) {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.team_users {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team_users .team__user {
+  padding-right: 16px;
+}
+
+.team_users img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.team_users h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #21333e;
+  margin: 0 0 10px;
+}
+
+.team_users p {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.team_users .contact li {
+  display: inline-block;
+}
+
+.team_users .contact li a span {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  display: inline-block;
+  background: rgba(5, 130, 131, 0.15);
+  border-radius: 100px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #058283;
+  -webkit-transition: all .2s ease-out 0s;
+  transition: all .2s ease-out 0s;
+}
+
+.team_users .contact li a span:hover {
+  background: #058283;
+  color: #ffffff;
+  -webkit-transition: all .2s ease-out 0s;
+  transition: all .2s ease-out 0s;
+}
+
+.president__speech {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 35px;
+  background-color: #058283;
+  border-radius: 4px;
+  color: #f1f1f1;
+}
+
+.president__speech h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.president__speech p {
+  line-height: 1.5;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.president__speech h5 {
+  color: #ffffff;
+  opacity: 0.85;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.president__speech span {
+  position: absolute;
+  bottom: 35px;
+  right: 50px;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1198.98px) {
+  .team-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .team-section .container-xl {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .president__speech {
+    margin-top: 70px;
   }
 }
 /*# sourceMappingURL=main.css.map */
