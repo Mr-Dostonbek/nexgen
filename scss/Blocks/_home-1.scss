@@ -956,3 +956,30 @@
   }
 
   // Footer section end
+
+  // Footer bottom start
+
+  .footer-bottom{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 1);
+    p{
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: $secondary-p-color;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .container-xl{
+      padding-left: 25px;
+      padding-right: 25px;
+      a{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $primary-color;
+      }
+    }
+  }
+
+  // Footer bottom end
