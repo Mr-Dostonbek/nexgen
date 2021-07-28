@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url(d:\Project\Nexgen\assets\splide-2.4.21\dist\css\themes\splide-sea-green.min.css);
 @import url(d:\Project\Nexgen\assets\splide-2.4.21\dist\css\themes\splide-skyblue.min.css);
 *,
@@ -855,7 +857,7 @@ nav .content .links {
   display: flex;
 }
 
-.content .logo a {
+.logo a {
   color: #fff;
   font-size: 19.2px;
   font-weight: 700;
@@ -1488,11 +1490,7 @@ nav.sticky {
 .video-section {
   padding-top: 130px;
   padding-bottom: 130px;
-  width: 100%;
   background-color: #ffffff;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 .video-section .video-container .video__content {
@@ -1503,7 +1501,6 @@ nav.sticky {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-content: center;
 }
 
 .video-section .video-container .video__content .video__img {
@@ -1630,6 +1627,8 @@ nav.sticky {
 @media (max-width: 991.98px) {
   .video-container {
     max-width: 970px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .video__title h2 {
     font-size: 32px;
@@ -2358,6 +2357,114 @@ nav.sticky {
   }
   .touch-section .contact-column-2 {
     margin-top: 40px;
+  }
+}
+
+.footer-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  max-width: 100%;
+  background: url("../../assets/images/sections/Background/bg-7.jpg") top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer-section .container-xl .logo-part p {
+  margin: 24px 0;
+  line-height: 1.5;
+  color: #c0c3d0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-section .container-xl .logo-part ul li {
+  display: block;
+  padding: 8px 0;
+}
+
+.footer-section .container-xl .logo-part ul li a {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #c0c3d0;
+}
+
+.footer-section .container-xl .logo-part ul li a:hover {
+  color: #058283;
+}
+
+.footer-section .container-xl .logo-part ul li a span {
+  margin-right: 8px;
+}
+
+.footer-section .container-xl .logo-part .btn {
+  margin-left: 0;
+}
+
+.footer-section .container-xl .footer_card {
+  width: 100%;
+  padding: 45px;
+  border-radius: 10px;
+  border: none;
+  padding: 45px;
+  -webkit-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+  background-color: rgba(255, 255, 255, 0.035);
+}
+
+.footer-section .container-xl .footer_card:hover {
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -webkit-transform: translateY(-7.5px);
+          transform: translateY(-7.5px);
+}
+
+.footer-section .container-xl .footer_card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.footer-section .container-xl .footer_card ul li a {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0 0 0.5rem;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  color: #c0c3d0;
+}
+
+.footer-section .container-xl .footer_card ul li a:hover {
+  color: #058283;
+}
+
+.footer-section .container-xl .footer_card ul li a span {
+  margin-right: 2px;
+}
+
+@media (max-width: 1198.98px) {
+  .footer-section .container-xl {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .footer-section .container-xl .logo-part {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .footer-section .container-xl .footer_card {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-section .container-xl .footer_card span {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

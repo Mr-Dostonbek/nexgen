@@ -2,11 +2,7 @@
 
 .video-section {
   @include section-padding;
-  width: 100%;
   background-color: $white-color;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
 
   .video-container {
 
@@ -14,7 +10,6 @@
     .video__content {
       position: relative;
       display: flex;
-      justify-content: center;
       justify-content: center;
 
       .video__img {
@@ -141,6 +136,8 @@
 @media (max-width: 991.98px) {
   .video-container {
     max-width: 970px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .video__title {
@@ -850,3 +847,112 @@
   }
 
   // Touch section end
+
+  // Footer section start
+
+  .footer-section{
+    @include section-padding;
+    max-width: 100%;
+    background: url('../../assets/images/sections/Background/bg-7.jpg') top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .container-xl {
+      .logo-part{
+        p{
+          margin: 24px 0;
+          line-height: 1.5;
+          color: $secondary-p-color;
+          font-family: "Montserrat", sans-serif;
+        }
+        ul{
+          li{
+            display: block;
+            padding: 8px 0;
+            a{
+              font-size: 17px;
+              font-weight: 300;
+              line-height: 1.4;
+              color: $secondary-p-color;
+              &:hover{
+                color: $primary-color;
+              }
+              span{
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+        .btn{
+          margin-left: 0;
+        }
+      }
+      .footer_card{
+        width: 100%;
+        padding: 45px;
+        border-radius: 10px;
+        border: none;
+        padding: 45px;
+        transition: all .4s ease-out 0s;
+        background-color: rgba(255, 255, 255, 0.035);
+        &:hover{
+          transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          transform: translateY(-7.5px);
+        }
+        h4{
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 1.2;
+          color: $white-color;
+          margin-bottom: 24px;
+        }
+        ul{
+          li{
+            a{
+              font-size: 17px;
+              font-weight: 300;
+              margin: 0 0 0.5rem;
+              display: block;
+              font-family: 'Montserrat', sans-serif;
+              color: $secondary-p-color;
+              &:hover{
+                color: $primary-color;
+              }
+              span{
+                margin-right: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1198.98px) {
+    .footer-section{
+      .container-xl{
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px){
+    .footer-section{
+      @include section-smaller-padding;
+      .container-xl{
+        .logo-part{
+          text-align: center;
+          margin-bottom: 50px;
+        }
+        .footer_card{
+          text-align: center;
+          margin-bottom: 30px;
+          span{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer section end
