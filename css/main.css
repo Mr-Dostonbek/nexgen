@@ -2228,6 +2228,10 @@ nav.sticky {
   border: none;
 }
 
+.newsletter-section .form__content .btn {
+  margin-top: 10px;
+}
+
 @media (max-width: 1198.98px) {
   .newsletter-section .container-xl {
     padding-left: 25px;
