@@ -562,6 +562,9 @@
       filter: blur(2px);
       transition: all 0.4s ease-out 0s;
     }
+    &:hover .glide__img::before{
+      background: rgba(0, 0, 0, 0.75);
+    }
     &:hover .glide__date{
       transform: translateY(0);
       z-index: 4;
